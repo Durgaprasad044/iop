@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>IRIS Chatbot</h1>        
+        <div id="apiKeyContainer" class="api-key-container">
+            <input
+                type="password"
+                id="apiKeyInput"
+                placeholder="Enter your API key"
+                class="api-key-input"
+            />
+            <button id="saveApiKeyButton" class="api-key-button">
+                Save API Key
+            </button>
+            <p class="api-key-note">
+                Note: Get your API key from <a href="https://ai.google.dev/" target="_blank" rel="noreferrer">Google AI Studio</a>
+            </p>
+        </div>
+        
+        <div id="chatInterface" class="chat-container" style="display: none;">
+            <div id="messagesContainer" class="messages-container">
+                <!-- Messages will be added here dynamically -->
+            </div>
+            
+            <div class="input-container">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type your message..."
+                    class="message-input"
+                />
+                <div class="controls">
+                    <button id="toggleListeningButton" class="control-button">
+                        Start Listening
+                    </button>
+                    <button id="sendMessageButton" class="control-button">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="videoContainer" class="video-container" style="display: none;">
+            <video id="video" autoplay playsinline class="video-element"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

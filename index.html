@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <title>Crypto Marketplace</title>
 </head>
 
@@ -17,7 +18,6 @@
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="charts.html">Charts</a>
-            <a href="search.html">Search</a>
             <a href="about.html">About US</a>
         </div>
 
@@ -48,7 +48,6 @@
                 <div class="nav-links">
                     <a href="index.html" class="active">Home</a>
                     <a href="charts.html">Charts</a>
-                    <a href="search.html">Search</a>
                     <a href="about.html">About US</a>
                 </div>
             </div>
@@ -120,23 +119,17 @@
         </div>
     </div>
 
-    <footer>
-        
-        <div class="social-icons">
-            <a href="#"><i class="ri-youtube-line"></i></a>
-            <a href="#"><i class="ri-telegram-line"></i></a>
-            <a href="#"><i class="ri-github-line"></i></a>
-            <a href="#"><i class="ri-discord-line"></i></a>
-        </div>
-    </footer>
 
     <button onclick="scrollToTop()" id="scrollTop"><i class="ri-arrow-up-s-line"></i></button>
-
+    <button id="chatbotToggle" class="chatbot-toggle">
+        <a href="chatbot.html" target="_blank" rel="noopener noreferrer"><i class="ri-customer-service-2-line"></i></a>
+    </button>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="global.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
+    <script src="chatbot.js"></script>
 </body>
 
 </html>
